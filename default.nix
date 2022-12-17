@@ -187,6 +187,7 @@ nightlyToolchains.${v} // rec {
       name = "rust-analyzer-${rust-analyzer-rev}";
       src = ./data/rust-analyzer-vsix.zip;
       vscodeExtUniqueId = "rust-lang.rust-analyzer";
+      vscodeExtPublisher = "rust-lang";
       buildInputs = with pkgs; [ jq moreutils ];
       patchPhase = ''
         jq -e '
